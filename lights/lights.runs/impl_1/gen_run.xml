@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1596275439">
+  <File Type="BITSTR-BMM" Name="lights_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="lights_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="lights_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="lights_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="lights.tcl"/>
+  <File Type="OPT-TIMING" Name="lights_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="lights_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="lights_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="lights_reports.tcl"/>
+  <File Type="OPT-DRC" Name="lights_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="lights.hwdef"/>
+  <File Type="PWROPT-DCP" Name="lights_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="lights_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="lights_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="lights_placed.dcp"/>
+  <File Type="PLACE-IO" Name="lights_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="lights_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="lights_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="lights_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="lights_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="lights_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="lights_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="lights.bgn"/>
+  <File Type="PLACE-TIMING" Name="lights_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="lights_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="lights.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="lights_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="lights_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="lights_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="lights.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="lights_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="lights_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="lights_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="lights_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="lights_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="lights_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="lights.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="lights_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="lights.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="lights_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lights_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="lights.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lights_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="lights_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="lights_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="lights_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="lights_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="lights_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="lights_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="lights_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="lights_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="lights_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="lights_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="lights_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="lights_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="lights_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="lights_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="lights_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="lights_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="lights_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="lights_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="lights.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="lights_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="lights.rbt"/>
+  <File Type="BITSTR-NKY" Name="lights.nky"/>
+  <File Type="BG-DRC" Name="lights.drc"/>
+  <File Type="RDI-RDI" Name="lights.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/lights.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Driver_Bayer_To_RGB.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Driver_Csi_To_Dvp.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Driver_MIPI.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Driver_IIC.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/OV5647_Init.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Trigger_Generator.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="lights"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/system.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RGB_LED_Task_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Driver_MIPI_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="OV5647_Init_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Driver_IIC_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Clk_Division_0"/>
+</GenRun>

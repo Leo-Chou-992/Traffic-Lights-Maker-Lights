@@ -1,0 +1,474 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Aug  1 16:36:32 2020
+# Process ID: 10104
+# Current directory: C:/Vivado documents/SEA_exp/lights/lights.runs/csi_to_axis_0_synth_1
+# Command line: vivado.exe -log csi_to_axis_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source csi_to_axis_0.tcl
+# Log file: C:/Vivado documents/SEA_exp/lights/lights.runs/csi_to_axis_0_synth_1/csi_to_axis_0.vds
+# Journal file: C:/Vivado documents/SEA_exp/lights/lights.runs/csi_to_axis_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source csi_to_axis_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Frequency-Divider-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/IIC-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/Camera_Demo/Camera_Demo/IP_Core/CSI2DPHY_RX_1.0_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/Camera_Demo/Camera_Demo/IP_Core/CSI2AXIS_1.0_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'trenz.biz:user:csi_to_axis:1.0'. The one found in IP location 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/IP/CSI2AXIS_1.0_IP' will take precedence over the same IP in location c:/Users/萌萌哒周小行/Desktop/Camera_Demo/Camera_Demo/IP_Core/CSI2AXIS_1.0_IP
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'trenz.biz:user:csi2_d_phy_rx:1.0'. The one found in IP location 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/IP/CSI2DPHY_RX_1.0_IP' will take precedence over the same IP in location c:/Users/萌萌哒周小行/Desktop/Camera_Demo/Camera_Demo/IP_Core/CSI2DPHY_RX_1.0_IP
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 333.133 ; gain = 34.953
+Command: synth_design -top csi_to_axis_0 -part xc7s15ftgb196-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10592 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 718.641 ; gain = 176.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'csi_to_axis_0' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/synth/csi_to_axis_0.vhd:85]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_LANES bound to: 2 - type: integer 
+	Parameter C_TIMEOUT bound to: 255 - type: integer 
+INFO: [Synth 8-3491] module 'csi_to_axis_v1_0' declared at 'c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis_v1_0.vhd:11' bound to instance 'U0' of component 'csi_to_axis_v1_0' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/synth/csi_to_axis_0.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'csi_to_axis_v1_0' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis_v1_0.vhd:78]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_LANES bound to: 2 - type: integer 
+	Parameter C_TIMEOUT bound to: 255 - type: integer 
+	Parameter C_LANES bound to: 2 - type: integer 
+	Parameter C_TIMEOUT bound to: 255 - type: integer 
+INFO: [Synth 8-3491] module 'lane_align' declared at 'c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/lane_align.vhd:9' bound to instance 'lane_align_inst' of component 'lane_align' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis_v1_0.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'lane_align' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/lane_align.vhd:26]
+	Parameter C_LANES bound to: 2 - type: integer 
+	Parameter C_TIMEOUT bound to: 255 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/lane_align.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'lane_align' (1#1) [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/lane_align.vhd:26]
+	Parameter C_LANES bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'lane_merge' declared at 'c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/lane_merge.vhd:9' bound to instance 'lane_merge_inst' of component 'lane_merge' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis_v1_0.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'lane_merge' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/lane_merge.vhd:24]
+	Parameter C_LANES bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element valid_dl_reg was removed.  [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/lane_merge.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'lane_merge' (2#1) [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/lane_merge.vhd:24]
+	Parameter C_LANES bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'csi2_parser' declared at 'c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi2_parser.vhd:9' bound to instance 'parser_inst' of component 'csi2_parser' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis_v1_0.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'csi2_parser' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi2_parser.vhd:33]
+	Parameter C_LANES bound to: 2 - type: integer 
+WARNING: [Synth 8-614] signal 's_axis_tvalid' is read in the process but is not in the sensitivity list [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi2_parser.vhd:135]
+WARNING: [Synth 8-614] signal 's_axis_tdata' is read in the process but is not in the sensitivity list [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi2_parser.vhd:135]
+WARNING: [Synth 8-6014] Unused sequential element packet_cs_reg was removed.  [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi2_parser.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'csi2_parser' (3#1) [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi2_parser.vhd:33]
+WARNING: [Synth 8-3848] Net dl2_enable in module/entity csi_to_axis_v1_0 does not have driver. [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis_v1_0.vhd:35]
+WARNING: [Synth 8-3848] Net dl3_enable in module/entity csi_to_axis_v1_0 does not have driver. [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis_v1_0.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'csi_to_axis_v1_0' (4#1) [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis_v1_0.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'csi_to_axis_0' (5#1) [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/synth/csi_to_axis_0.vhd:85]
+WARNING: [Synth 8-3331] design lane_align has unconnected port err_ack
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_enable
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_enable
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port cl_stopstate
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port cl_rxclkactivehs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl0_rxactivehs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl0_rxsynchs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl1_rxactivehs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl1_rxsynchs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_rxactivehs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_rxvalidhs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_rxsynchs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[7]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[6]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[5]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[4]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[3]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[2]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[1]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[0]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_rxactivehs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_rxvalidhs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_rxsynchs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[7]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[6]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[5]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[4]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[3]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[2]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[1]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[0]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port m_axis_aclk
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port m_axis_aresetn
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port m_axis_tready
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 783.984 ; gain = 242.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 783.984 ; gain = 242.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 783.984 ; gain = 242.250
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis.xdc] for cell 'U0'
+Parsing XDC File [C:/Vivado documents/SEA_exp/lights/lights.runs/csi_to_axis_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Vivado documents/SEA_exp/lights/lights.runs/csi_to_axis_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 897.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 899.727 ; gain = 2.539
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 899.727 ; gain = 357.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 899.727 ; gain = 357.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  {C:/Vivado documents/SEA_exp/lights/lights.runs/csi_to_axis_0_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 899.727 ; gain = 357.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'sm_state_reg' in module 'csi2_parser'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 st_idle |                              000 |                              000
+                 st_hdra |                              001 |                              001
+                 st_hdrb |                              010 |                              010
+             st_transfer |                              011 |                              011
+               st_resync |                              100 |                              100
+                  iSTATE |                              101 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_state_reg' using encoding 'sequential' in module 'csi2_parser'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 899.727 ; gain = 357.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 7     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   6 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lane_align 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module lane_merge 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+Module csi2_parser 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   6 Input     16 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_enable
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_enable
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port cl_stopstate
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port cl_rxclkactivehs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl0_rxactivehs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl0_rxsynchs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl1_rxactivehs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl1_rxsynchs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_rxactivehs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_rxvalidhs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_rxsynchs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[7]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[6]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[5]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[4]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[3]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[2]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[1]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl2_datahs[0]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_rxactivehs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_rxvalidhs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_rxsynchs
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[7]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[6]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[5]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[4]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[3]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[2]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[1]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port dl3_datahs[0]
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port trig_ack
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port m_axis_aclk
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port m_axis_aresetn
+WARNING: [Synth 8-3331] design csi_to_axis_v1_0 has unconnected port m_axis_tready
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 899.727 ; gain = 357.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 899.727 ; gain = 357.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 899.727 ; gain = 357.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 902.438 ; gain = 360.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin lane_align_inst/err_ack_i_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 908.227 ; gain = 366.492
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 908.227 ; gain = 366.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 908.227 ; gain = 366.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 908.227 ; gain = 366.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 908.227 ; gain = 366.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 908.227 ; gain = 366.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    10|
+|2     |LUT1   |    19|
+|3     |LUT2   |    17|
+|4     |LUT3   |    35|
+|5     |LUT4   |    61|
+|6     |LUT5   |    25|
+|7     |LUT6   |    92|
+|8     |FDRE   |   212|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+-----------------+------+
+|      |Instance            |Module           |Cells |
++------+--------------------+-----------------+------+
+|1     |top                 |                 |   471|
+|2     |  U0                |csi_to_axis_v1_0 |   471|
+|3     |    lane_align_inst |lane_align       |   264|
+|4     |    lane_merge_inst |lane_merge       |    77|
+|5     |    parser_inst     |csi2_parser      |   130|
++------+--------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 908.227 ; gain = 366.492
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 908.227 ; gain = 250.750
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 908.227 ; gain = 366.492
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 924.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 76 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 924.297 ; gain = 591.164
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 924.297 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado documents/SEA_exp/lights/lights.runs/csi_to_axis_0_synth_1/csi_to_axis_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP csi_to_axis_0, cache-ID = 88a1776d31c0324f
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 924.297 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado documents/SEA_exp/lights/lights.runs/csi_to_axis_0_synth_1/csi_to_axis_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file csi_to_axis_0_utilization_synth.rpt -pb csi_to_axis_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 16:37:24 2020...

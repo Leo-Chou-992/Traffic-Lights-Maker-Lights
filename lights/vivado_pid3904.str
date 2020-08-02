@@ -1,0 +1,482 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 3904
+License: Customer
+
+Current time: 	Sat Aug 01 16:07:45 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 296 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	萌萌哒周小行
+User home directory: C:/Users/萌萌哒周小行
+User working directory: C:/Vivado documents/SEA_exp/lights
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/萌萌哒周小行/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/萌萌哒周小行/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/萌萌哒周小行/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Vivado documents/SEA_exp/lights/vivado.log
+Vivado journal file location: 	C:/Vivado documents/SEA_exp/lights/vivado.jou
+Engine tmp dir: 	C:/Vivado documents/SEA_exp/lights/.Xil/Vivado-3904-LAPTOP-6HR1D0VC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 634 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Vivado documents\SEA_exp\lights\lights.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Vivado documents/SEA_exp/lights/lights.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 683 MB. GUI used memory: 45 MB. Current time: 8/1/20, 4:07:47 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 58 MB (+58258kb) [00:00:21]
+// [Engine Memory]: 701 MB (+584071kb) [00:00:21]
+// [GUI Memory]: 69 MB (+8993kb) [00:00:22]
+// [GUI Memory]: 81 MB (+8545kb) [00:00:24]
+// [GUI Memory]: 97 MB (+12500kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  5585 ms.
+// Tcl Message: open_project {C:/Vivado documents/SEA_exp/lights/lights.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Frequency-Divider-IP'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/IIC-IP'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// [Engine Memory]: 778 MB (+43392kb) [00:00:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  1676 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1129 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 810.305 ; gain = 177.574 
+// HMemoryUtils.trashcanNow. Engine heap size: 940 MB. GUI used memory: 54 MB. Current time: 8/1/20, 4:08:02 PM CST
+// Project name: lights; location: C:/Vivado documents/SEA_exp/lights; part: xc7s15ftgb196-1
+// [Engine Memory]: 940 MB (+129567kb) [00:00:29]
+dismissDialog("Open Project"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 107 MB (+5420kb) [00:00:33]
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  1006 ms.
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Driver_SK6805_0 (Driver_SK6805_0.xci)]", 2); // B (F, cl)
+// A (cl): Show IP Hierarchy: addNotify
+// Elapsed time: 34 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 118 MB (+5870kb) [00:01:12]
+dismissDialog("Show IP Hierarchy"); // A (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lights (lights.v)]", 1); // B (F, cl)
+// PAPropertyPanels.initPanels (lights.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lights (lights.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lights (lights.v)]", 1, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lights (lights.v)]", 1, true); // B (F, cl) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 17 seconds
+String[] filenames31467 = {"C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_Bayer_To_RGB.v", "C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_Csi_To_Dvp.v", "C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_IIC.v", "C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_MIPI.v", "C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/OV5647_Init.v", "C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Trigger_Generator.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 24 seconds
+dismissDialog("Add Sources"); // c (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_IIC.v} {C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/OV5647_Init.v} {C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_MIPI.v} {C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_Bayer_To_RGB.v} {C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_Csi_To_Dvp.v} {C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Trigger_Generator.v}} 
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Add Sources  : addNotify
+dismissDialog("Add Sources"); // by (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 128 MB (+4355kb) [00:02:07]
+// Elapsed time: 337 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lights (lights.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lights (lights.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("lights.v", 111, 104); // cl (w, cl)
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 127, 297); // cl (w, cl)
+selectCodeEditor("lights.v", 213, 237); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("lights.v", 292, 244); // cl (w, cl)
+selectCodeEditor("lights.v", 292, 244, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("lights.v", 241, 64); // cl (w, cl)
+selectCodeEditor("lights.v", 241, 64, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 252, 171); // cl (w, cl)
+selectCodeEditor("lights.v", 252, 171, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 366, 187); // cl (w, cl)
+selectCodeEditor("lights.v", 351, 255); // cl (w, cl)
+selectCodeEditor("lights.v", 289, 190); // cl (w, cl)
+selectCodeEditor("lights.v", 256, 149); // cl (w, cl)
+selectCodeEditor("lights.v", 256, 149, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 260, 265); // cl (w, cl)
+selectCodeEditor("lights.v", 260, 265, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 202, 175); // cl (w, cl)
+selectCodeEditor("lights.v", 200, 175, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 219, 215); // cl (w, cl)
+selectCodeEditor("lights.v", 219, 215, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 202, 126); // cl (w, cl)
+selectCodeEditor("lights.v", 202, 126, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 216, 239); // cl (w, cl)
+selectCodeEditor("lights.v", 216, 239, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 147, 220); // cl (w, cl)
+selectCodeEditor("lights.v", 147, 220, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 184, 194); // cl (w, cl)
+selectCodeEditor("lights.v", 184, 194, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 162, 104); // cl (w, cl)
+selectCodeEditor("lights.v", 162, 104, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 184, 224); // cl (w, cl)
+selectCodeEditor("lights.v", 184, 224, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 144, 181); // cl (w, cl)
+selectCodeEditor("lights.v", 144, 181, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 185, 209); // cl (w, cl)
+selectCodeEditor("lights.v", 183, 210, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 200, 121); // cl (w, cl)
+selectCodeEditor("lights.v", 200, 121, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 242, 174); // cl (w, cl)
+selectCodeEditor("lights.v", 242, 174, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 186, 145); // cl (w, cl)
+selectCodeEditor("lights.v", 186, 145, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 227, 184); // cl (w, cl)
+selectCodeEditor("lights.v", 227, 184, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 194, 175); // cl (w, cl)
+selectCodeEditor("lights.v", 194, 175, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 214, 216); // cl (w, cl)
+selectCodeEditor("lights.v", 214, 216, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 197, 129); // cl (w, cl)
+selectCodeEditor("lights.v", 197, 129, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 228, 166); // cl (w, cl)
+selectCodeEditor("lights.v", 228, 166, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 169, 144); // cl (w, cl)
+selectCodeEditor("lights.v", 169, 144, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 203, 197); // cl (w, cl)
+selectCodeEditor("lights.v", 203, 197, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 258, 270); // cl (w, cl)
+selectCodeEditor("lights.v", 221, 179); // cl (w, cl)
+selectCodeEditor("lights.v", 228, 177); // cl (w, cl)
+selectCodeEditor("lights.v", 228, 177, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'c'); // cl (w, cl)
+selectCodeEditor("lights.v", 182, 268); // cl (w, cl)
+selectCodeEditor("lights.v", 182, 268, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+selectCodeEditor("lights.v", 102, 130); // cl (w, cl)
+selectCodeEditor("lights.v", 328, 137); // cl (w, cl)
+selectCodeEditor("lights.v", 137, 200); // cl (w, cl)
+selectCodeEditor("lights.v", 130, 217); // cl (w, cl)
+selectCodeEditor("lights.v", 134, 197); // cl (w, cl)
+selectCodeEditor("lights.v", 158, 238); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectCodeEditor("lights.v", 93, 224); // cl (w, cl)
+selectCodeEditor("lights.v", 93, 224, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 32 seconds
+selectCodeEditor("lights.v", 134, 247); // cl (w, cl)
+typeControlKey((HResource) null, "lights.v", 'v'); // cl (w, cl)
+// Elapsed time: 27 seconds
+selectCodeEditor("lights.v", 131, 172); // cl (w, cl)
+selectCodeEditor("lights.v", 139, 173); // cl (w, cl)
+selectCodeEditor("lights.v", 136, 197); // cl (w, cl)
+selectCodeEditor("lights.v", 254, 167); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("lights.v", 323, 244); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 4 seconds
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Aug  1 16:19:20 2020] Launched synth_1... Run output will be captured here: C:/Vivado documents/SEA_exp/lights/lights.runs/synth_1/runme.log [Sat Aug  1 16:19:20 2020] Launched impl_1... Run output will be captured here: C:/Vivado documents/SEA_exp/lights/lights.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // by (cl)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1258 ms. Increasing delay to 3000 ms.
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Synthesis Failed: addNotify
+// Elapsed time: 42 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cl)
+// Elapsed time: 14 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'csi2_d_phy_rx_0' not found [C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_MIPI.v:75]. ]", 2, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Vivado documents\SEA_exp\lights\lights.srcs\sources_1\new\Driver_MIPI.v;-;;-;16;-;line;-;75;-;;-;16;-;"); // ah (O, cl)
+selectCodeEditor("Driver_MIPI.v", 501, 94); // cl (w, cl)
+selectCodeEditor("Driver_MIPI.v", 147, 169); // cl (w, cl)
+selectCodeEditor("Driver_MIPI.v", 147, 169, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// by (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // by (SwingUtilities.SharedOwnerFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'csi2_d_phy_rx_0' not found [C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_MIPI.v:75]. ]", 2, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'csi2_d_phy_rx_0' not found [C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_MIPI.v:75]. ]", 2, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Vivado documents\SEA_exp\lights\lights.srcs\sources_1\new\Driver_MIPI.v;-;;-;16;-;line;-;75;-;;-;16;-;"); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'csi2_d_phy_rx_0' not found [C:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/new/Driver_MIPI.v:75]. ]", 2, false, false, false, false, false, true); // ah (O, cl) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// PAPropertyPanels.initPanels (C:/Xilinx/Vivado/2019.1/data/) elapsed time: 0.8s
+// WARNING: HEventQueue.dispatchEvent() is taking  1472 ms.
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 4, "User Repository", 0, true, false, false, false, true, false); // L (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_ADD_REPOSITORY, "Add Repository..."); // ah (an, cl)
+// Elapsed time: 45 seconds
+setFolderChooser("C:/Users/萌萌哒周小行/Desktop/Camera_Demo/Camera_Demo/IP_Core/CSI2DPHY_RX_1.0_IP");
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1084 ms.
+// Tcl Message: set_property  ip_repo_paths  {{c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP} {c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Frequency-Divider-IP} {c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/IIC-IP} {c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP} C:/Users/萌萌哒周小行/Desktop/Camera_Demo/Camera_Demo/IP_Core/CSI2DPHY_RX_1.0_IP} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// by (cl):  Refresh All IP Repositories : addNotify
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// c (cl): Add Repository: addNotify
+// [GUI Memory]: 140 MB (+5410kb) [00:14:08]
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (cl)
+// Elapsed time: 12 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cl)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cl)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // L (O, cl)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 1); // L (O, cl)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 1); // L (O, cl)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UserIP ;  ;  ;  ; ", 2); // L (O, cl)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CSI-2 D-PHY RX v1_0 ;  ; Beta ; Included ; trenz.biz:user:csi2_d_phy_rx:1.0", 3, "CSI-2 D-PHY RX v1_0", 0, true); // L (O, cl) - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CSI-2 D-PHY RX v1_0 ;  ; Beta ; Included ; trenz.biz:user:csi2_d_phy_rx:1.0", 3); // L (O, cl)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CSI-2 D-PHY RX v1_0 ;  ; Beta ; Included ; trenz.biz:user:csi2_d_phy_rx:1.0", 3, "CSI-2 D-PHY RX v1_0", 0, true, false, false, false, false, true); // L (O, cl) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// r (cl): Customize IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+dismissDialog("Customize IP"); // r (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name csi2_d_phy_rx -vendor trenz.biz -library user -version 1.0 -module_name csi2_d_phy_rx_0 -dir {c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip} 
+// by (cl):  Customize IP : addNotify
+// aI (cl): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // by (cl)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, csi2_d_phy_rx_0]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, csi2_d_phy_rx_0]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, csi2_d_phy_rx_0]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cl): Re-customize IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_1]", 3); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_1]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, csi2_d_phy_rx_0]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, csi2_d_phy_rx_0]", 4, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae (an, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae (an, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0.xci}}] -no_script -reset -force -quiet 
+// aE (cl): Remove Sources: addNotify
+// by (aE):  Remove Sources : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: remove_files  {{c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0.xci}} 
+// TclEventType: PROJ_DESIGN_MODE_SET
+dismissDialog("Remove Sources"); // by (aE)
+// [GUI Memory]: 149 MB (+2777kb) [00:15:43]
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CSI-2 D-PHY RX v1_0 ;  ; Beta ; Included ; trenz.biz:user:csi2_d_phy_rx:1.0", 8, "CSI-2 D-PHY RX v1_0", 0, false); // L (O, cl)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CSI-2 D-PHY RX v1_0 ;  ; Beta ; Included ; trenz.biz:user:csi2_d_phy_rx:1.0", 8); // L (O, cl)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CSI-2 D-PHY RX v1_0 ;  ; Beta ; Included ; trenz.biz:user:csi2_d_phy_rx:1.0", 8, "CSI-2 D-PHY RX v1_0", 0, false, false, false, false, false, true); // L (O, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cl): Customize IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+dismissDialog("Customize IP"); // r (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name csi2_d_phy_rx -vendor trenz.biz -library user -version 1.0 -module_name csi2_d_phy_rx_0 -dir {c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip} 
+// aI (cl): Generate Output Products: addNotify
+selectRadioButton(PAResourceQtoS.SimpleOutputProductDialog_SYNTHESIZE_ALL_IP_INCLUDING_IP_CONTAINED, "Out of context per IP"); // a (Q, aI)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// by (cl):  Managing Output Products : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, csi2_d_phy_rx_0]", 4, false); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_1]", 3); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_1]", 3); // B (F, cl)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, csi2_d_phy_rx_0]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, csi2_d_phy_rx_0]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cl): Re-customize IP: addNotify
+// Elapsed time: 11 seconds
+setText("Calibration Cycle", "8191"); // z (bh, r)
+setText("Error Rate Limit", "50"); // z (bh, r)
+setText("Iodelay Group Name", "csi_dly_grp"); // z (bh, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Re-customize IP"); // r (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.C_CALIB_WAIT {8191} CONFIG.C_RATE_LIMIT {50}] [get_ips csi2_d_phy_rx_0] 
+// aI (cl): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// by (cl):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  {{c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi2_d_phy_rx_0_1/csi2_d_phy_rx_0.xci}}] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'csi2_d_phy_rx_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'csi2_d_phy_rx_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'csi2_d_phy_rx_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all csi2_d_phy_rx_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files {{c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi2_d_phy_rx_0_1/csi2_d_phy_rx_0.xci}}] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/csi2_d_phy_rx_0_1/csi2_d_phy_rx_0.xci}}] 
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs -jobs 8 csi2_d_phy_rx_0_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Aug  1 16:24:20 2020] Launched csi2_d_phy_rx_0_synth_1... Run output will be captured here: C:/Vivado documents/SEA_exp/lights/lights.runs/csi2_d_phy_rx_0_synth_1/runme.log 

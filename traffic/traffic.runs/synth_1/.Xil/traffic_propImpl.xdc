@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:{C:/Vivado documents/traffic/traffic.srcs/constrs_1/new/system.xdc} rfile:../../../traffic.srcs/constrs_1/new/system.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN J1 [get_ports {red_a}]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN A13 [get_ports {green_a}]

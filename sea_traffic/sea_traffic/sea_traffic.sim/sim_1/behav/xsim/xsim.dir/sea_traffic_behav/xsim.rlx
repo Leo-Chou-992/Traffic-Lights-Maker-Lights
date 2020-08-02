@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3806278828441671915  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 3c82e4d4a1bf441a9cafd92c0e37b122 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sea_traffic_behav xil_defaultlib.sea_traffic xil_defaultlib.glbl" , 
+    buildDate : "Jun 14 2018" , 
+    buildTime : "20:41:02" , 
+    linkCmd : "D:\\XILINX\\Vivado\\2018.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/sea_traffic_behav/xsimk.exe\"   \"xsim.dir/sea_traffic_behav/obj/xsim_0.win64.obj\" \"xsim.dir/sea_traffic_behav/obj/xsim_1.win64.obj\" \"D:\\XILINX\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simulator_kernel.dll\"  \"D:\\XILINX\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

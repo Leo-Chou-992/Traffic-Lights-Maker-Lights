@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Aug  1 15:22:47 2020
+# Process ID: 2592
+# Current directory: C:/Vivado documents/SEA_exp/lights
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1748 C:\Vivado documents\SEA_exp\lights\lights.xpr
+# Log file: C:/Vivado documents/SEA_exp/lights/vivado.log
+# Journal file: C:/Vivado documents/SEA_exp/lights\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Vivado documents/SEA_exp/lights/lights.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Frequency-Divider-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/IIC-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 833.797 ; gain = 200.188
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Aug  1 15:26:34 2020] Launched synth_1...
+Run output will be captured here: C:/Vivado documents/SEA_exp/lights/lights.runs/synth_1/runme.log
+[Sat Aug  1 15:26:34 2020] Launched impl_1...
+Run output will be captured here: C:/Vivado documents/SEA_exp/lights/lights.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 16:07:01 2020...

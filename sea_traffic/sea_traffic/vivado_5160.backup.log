@@ -1,0 +1,374 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jul 31 13:18:20 2020
+# Process ID: 5160
+# Current directory: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3184 D:\gf\Study Resource\XILINX\summer_class\sea_traffic\sea_traffic\sea_traffic.xpr
+# Log file: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/vivado.log
+# Journal file: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILINX/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 899.328 ; gain = 117.258
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.srcs/sources_1/new/sea_traffic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sea_traffic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/XILINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3c82e4d4a1bf441a9cafd92c0e37b122 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sea_traffic_default
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/gf/Study -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/gf/Study" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 31 13:20:48 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 918.715 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 933.348 ; gain = 17.773
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.srcs/sources_1/new/sea_traffic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sea_traffic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/XILINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3c82e4d4a1bf441a9cafd92c0e37b122 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sea_traffic_default
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 954.449 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jul 31 13:23:40 2020] Launched synth_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Jul 31 13:25:42 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1
+
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Fri Jul 31 13:28:44 2020] Launched synth_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1/runme.log
+[Fri Jul 31 13:28:44 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jul 31 13:31:31 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/sea_traffic.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/sea_traffic.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jul 31 13:39:50 2020] Launched synth_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jul 31 13:40:34 2020] Launched synth_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Jul 31 13:41:47 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jul 31 13:43:12 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/sea_traffic.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jul 31 13:49:43 2020] Launched synth_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -jobs 4
+[Fri Jul 31 13:51:26 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jul 31 13:54:04 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/sea_traffic.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jul 31 13:56:09 2020] Launched synth_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Jul 31 13:57:00 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jul 31 13:58:16 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/sea_traffic.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jul 31 14:00:54 2020] Launched synth_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1/runme.log
+[Fri Jul 31 14:00:54 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1715.969 ; gain = 69.953
+INFO: [Common 17-344] 'open_run' was cancelled
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/sea_traffic.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Jul 31 14:05:11 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jul 31 14:09:40 2020] Launched synth_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Jul 31 14:10:36 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jul 31 14:12:21 2020] Launched impl_1...
+Run output will be captured here: D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/gf/Study Resource/XILINX/summer_class/sea_traffic/sea_traffic/sea_traffic.runs/impl_1/sea_traffic.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 14:15:26 2020...

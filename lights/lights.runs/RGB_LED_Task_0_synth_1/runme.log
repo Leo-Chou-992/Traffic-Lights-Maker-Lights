@@ -1,0 +1,356 @@
+
+*** Running vivado
+    with args -log RGB_LED_Task_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RGB_LED_Task_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source RGB_LED_Task_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/Frequency-Divider-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/IIC-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/萌萌哒周小行/Desktop/FPGA Project/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 334.543 ; gain = 36.242
+Command: synth_design -top RGB_LED_Task_0 -part xc7s15ftgb196-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11280 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 519.047 ; gain = 184.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RGB_LED_Task_0' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/RGB_LED_Task_0/synth/RGB_LED_Task_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'RGB_LED_Task' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/RGB_LED_Task_0/src/RGB_LED_Task.v:26]
+	Parameter PWM_PERCENT_Max bound to: 500 - type: integer 
+	Parameter PWM_PERCENT_Min bound to: 0 - type: integer 
+	Parameter Delta_Min bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Driver_SK6805' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/RGB_LED_Task_0/src/Driver_SK6805.v:34]
+	Parameter Period_Send bound to: 12 - type: integer 
+	Parameter Division_Factor bound to: 1000 - type: integer 
+	Parameter RGB_All_Bit bound to: 48 - type: integer 
+	Parameter CODE_High_0 bound to: 3 - type: integer 
+	Parameter CODE_High_1 bound to: 9 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/RGB_LED_Task_0/src/Driver_SK6805.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_SK6805' (1#1) [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/RGB_LED_Task_0/src/Driver_SK6805.v:34]
+INFO: [Synth 8-6157] synthesizing module 'Clk_Division' [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/RGB_LED_Task_0/src/Clk_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_Division' (2#1) [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/RGB_LED_Task_0/src/Clk_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_LED_Task' (3#1) [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/RGB_LED_Task_0/src/RGB_LED_Task.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_LED_Task_0' (4#1) [c:/Vivado documents/SEA_exp/lights/lights.srcs/sources_1/ip/RGB_LED_Task_0/synth/RGB_LED_Task_0.v:58]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 583.461 ; gain = 248.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 583.461 ; gain = 248.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 583.461 ; gain = 248.918
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 583.461 ; gain = 248.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
++---Registers : 
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Driver_SK6805 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module Clk_Division 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module RGB_LED_Task 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP inst/Clk_Divide_2_reg, operation Mode is: (A*(B:0x1f4))'.
+DSP Report: register inst/Clk_Divide_2_reg is absorbed into DSP inst/Clk_Divide_2_reg.
+DSP Report: operator inst/Clk_Divide_20 is absorbed into DSP inst/Clk_Divide_2_reg.
+DSP Report: Generating DSP inst/Clk_Division1/Count1, operation Mode is: (C:0xffffffffffff)+(A*(B:0x1f4))'.
+DSP Report: register inst/Clk_Divide_2_reg is absorbed into DSP inst/Clk_Division1/Count1.
+DSP Report: operator inst/Clk_Division1/Count1 is absorbed into DSP inst/Clk_Division1/Count1.
+DSP Report: operator inst/Clk_Divide_20 is absorbed into DSP inst/Clk_Division1/Count1.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/Clk_Divide_1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/Cnt_1_reg[9]' (FDC) to 'inst/Cnt_1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Cnt_2_reg[9]' (FDC_1) to 'inst/Cnt_2_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/Cnt_1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/Cnt_2_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/Clk_Division0/Is_Odd_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 693.637 ; gain = 359.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|RGB_LED_Task | (A*(B:0x1f4))'                    | 13     | 9      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|RGB_LED_Task | (C:0xffffffffffff)+(A*(B:0x1f4))' | 13     | 9      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
++-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 701.676 ; gain = 367.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 701.848 ; gain = 367.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 701.848 ; gain = 367.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 701.848 ; gain = 367.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 701.848 ; gain = 367.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 701.848 ; gain = 367.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 701.848 ; gain = 367.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 701.848 ; gain = 367.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    45|
+|2     |DSP48E1 |     2|
+|3     |LUT1    |    34|
+|4     |LUT2    |    27|
+|5     |LUT3    |    46|
+|6     |LUT4    |    42|
+|7     |LUT5    |    28|
+|8     |LUT6    |    68|
+|9     |FDCE    |    88|
+|10    |FDRE    |    80|
++------+--------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------+------+
+|      |Instance            |Module         |Cells |
++------+--------------------+---------------+------+
+|1     |top                 |               |   460|
+|2     |  inst              |RGB_LED_Task   |   460|
+|3     |    Clk_Division0   |Clk_Division   |    71|
+|4     |    Clk_Division1   |Clk_Division_0 |   121|
+|5     |    Driver_SK6805_0 |Driver_SK6805  |    80|
++------+--------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 701.848 ; gain = 367.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 701.848 ; gain = 367.305
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 701.848 ; gain = 367.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 808.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 808.633 ; gain = 474.090
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 808.633 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado documents/SEA_exp/lights/lights.runs/RGB_LED_Task_0_synth_1/RGB_LED_Task_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1090.875 ; gain = 282.242
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP RGB_LED_Task_0, cache-ID = 08c7c3b64a9f9d3f
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1090.992 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado documents/SEA_exp/lights/lights.runs/RGB_LED_Task_0_synth_1/RGB_LED_Task_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RGB_LED_Task_0_utilization_synth.rpt -pb RGB_LED_Task_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 11:00:28 2020...

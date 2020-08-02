@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jul 30 11:01:04 2020
+# Process ID: 10956
+# Current directory: C:/Vivado documents/SEA_exp/lights/lights.runs/Driver_IIC_0_synth_1
+# Command line: vivado.exe -log Driver_IIC_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Driver_IIC_0.tcl
+# Log file: C:/Vivado documents/SEA_exp/lights/lights.runs/Driver_IIC_0_synth_1/Driver_IIC_0.vds
+# Journal file: C:/Vivado documents/SEA_exp/lights/lights.runs/Driver_IIC_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Driver_IIC_0.tcl -notrace
